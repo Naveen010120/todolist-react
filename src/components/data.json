@@ -1,3 +1,15 @@
 {
-  "data": []
+  "data": [],
+  "admin": [
+    {
+      "name": "admin",
+      "password": "admin123"
+    }
+  ],
+  "user": [
+    {
+      "name": "user",
+      "password": "user123"
+    }
+  ]
 }

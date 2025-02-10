@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Table from "./Table"
-import './Style.css'
-function Create({setAmount}) {
+import './Styles.css'
+function Create({setAmount,passAmount}) {
 
     let [details, setDetails] = useState({
         description: '',
@@ -52,7 +53,8 @@ function Create({setAmount}) {
                 </select>
                 <button type='submit' >Add Transcation</button>
             </form>
-            <Table details={setAmount} />
+            
+            <Table setFun={setAmount} value={passAmount}/>
         </>
     )
 }
